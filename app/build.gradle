@@ -25,4 +25,17 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+//    // Litho  需要使用Androidx 组件 故而需要弃用support支持库
+    implementation 'com.facebook.litho:litho-core:0.25.0'
+    implementation 'com.facebook.litho:litho-widget:0.25.0'
+
+    annotationProcessor 'com.facebook.litho:litho-processor:0.25.0'
+
+    // SoLoader
+    implementation 'com.facebook.soloader:soloader:0.5.1'
+
+    // For integration with Fresco
+    implementation 'com.facebook.litho:litho-fresco:0.25.0'
+
 }
